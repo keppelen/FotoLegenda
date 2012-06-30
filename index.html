@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/e.css">
+	<title>Foto Legenda</title>
+</head>
+<body>
+	<section class="topBar">
+		<div class="container">
+			<div class="row-fluid">
+				<h1 class="span3"><a href="" class="logo">Foto Legenda</a></h1>
+				<img class="span9 bannerTop" src="http://placehold.it/728x90" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="content">
+		<div class="container">
+			<div class="row-fluid">
+				<aside class="span3 sidebar">
+					<h3><span class="number">1</span> Envie uma foto</h3>
+					<a data-toggle="modal" href="#containerSelectPic"  class="btn btn-large" id="selectPic" >
+						Selecionar imagem
+					</a>
+					<div class="modal hide" id="containerSelectPic">
+					  <div class="modal-header">
+					    <button type="button" class="close" data-dismiss="modal">×</button>
+					    <h3>Selecione uma imagem</h3>
+					  </div>
+					  <div class="modal-body">
+					  	<div class="uploadPic">
+						    <h4>Faça upload da sua imagem
+						    	<span class="tipsUpload">Tamanho máximo de 800kb e largura mínima de 540px.</span>
+						    </h4>
+						</div>
+
+					  </div>
+					  <div class="modal-footer">
+					    <a href="#" class="btn" data-dismiss="modal">Fechar</a>
+					    <a href="#" class="btn btn-primary">Selecionar</a>
+					  </div>
+					</div>				
+					<h3><span class="number">2</span> Escolha o Layout</h3>
+					<ul class="selectLayout span12">
+						<li class="btn btn-primary" ref="layout1">a</li>
+						<li class="btn" ref="layout2">b</li>
+						<li class="btn" ref="layout3">c</li>
+						<li class="btn" ref="layout4">d</li>
+						<li class="btn" ref="layout5">e</li>
+						<li class="btn" ref="layout6">f</li>
+					</ul>
+					<h3><span class="number">3</span> Digite a legenda</h3>
+					<div class="legendContainer" id="firstLegendContainer">
+						<label class="labelMainLegend"><span>Legenda inferior</span>
+						<input type="text" placeholder="Preencha a legenda" class="legendField" />
+						</label>
+						<span class="btn btnFormatLegend btn-small" id="btnFormatLegend">Personalizar legenda?</span>
+						<div class="formatLegend">
+							<p>
+								<Label>Fonte: </label>
+								<select class="selectFont">
+									<option selected="selected">Arial</option>
+									<option>Georgia</option>
+									<option>Times</option>
+									<option>Comic Sans</option>
+								</select>
+							</p>
+							<p>
+								<Label>Tamanho: </label>
+								<select class="sizeFont">
+									<option>Pequeno</option>
+									<option>Médio</option>
+									<option selected="selected">Grande</option>
+									<option>Gigante</option>
+								</select>
+							</p>
+
+							<div class="colourPickerContainerMain">
+								<p class="labelColourPicker">
+									<Label>Cor da fonte: </label>
+								</p>
+								<div id="colourPickerFont" class="colourPicker colourPickerFont">
+							        <select name="colour">
+							        	<option value="ffffff" selected="selected">#ffffff</option>
+							            <option value="963400">#963400</option>
+							            <option value="986536">#986536</option>
+							            <option value="646809">#646809</option>
+							            <option value="036400">#036400</option>
+							            <option value="34696d">#34696d</option>
+							            <option value="003532">#003532</option>
+							            <option value="010066">#010066</option>
+							            <option value="340096">#340096</option>
+							            <option value="646809">#646809</option>
+							            <option value="036400">#036400</option>
+							            <option value="34696d">#34696d</option>
+							            <option value="003532">#003532</option>
+							            <option value="010066">#010066</option>
+							            <option value="340096">#340096</option>
+							        </select>			
+						        </div>
+					        </div>			
+						    
+						    <div class="colourPickerContainerMain backgroundColourPicker">
+							    <p class="labelColourPicker">
+									<Label>Cor do fundo: </label>
+								</p>
+								<div id="colourPickerBackground" class="colourPicker colourPickerBackground">
+							        <select name="colour">
+							            <option value="000000" selected="selected">#000000</option>
+							            <option value="986536">#986536</option>
+							            <option value="646809">#646809</option>
+							            <option value="036400">#036400</option>
+							            <option value="34696d">#34696d</option>
+							            <option value="003532">#003532</option>
+							            <option value="010066">#010066</option>
+							            <option value="340096">#340096</option>
+							        </select>			
+						        </div>
+					    	</div>
+						</div><!-- formatLegend -->
+						<hr class="clear" />
+					</div><!-- legendContainer -->
+					<input type="submit" class="confirm btn btn-large btn-success" value="Confirmar" />
+				</aside>
+				<section class="span7">
+					<h2>Sua foto</h2>
+					<div class="mainPicture">
+						<div class="secondLegend">Legenda Superior</div>
+						<img src="http://lorempixel.com/540/380/people/" width="540" height="380" alt="">
+						<div class="firstLegend">Legenda Inferior</div>
+					</div>
+				</section>
+				<section class="span2">
+					<h4>Ads</h4>
+					<img class="bannerSidebar" src="http://placehold.it/160x600" alt="">
+				</section>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<p>Desenvolvido por: Leandro Oriente e Hugo Roque</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/jquery.colourPicker.js"></script>
+	<script type="text/javascript" src="js/s.js"></script>
+</body>
+</html>
